@@ -11,10 +11,6 @@
     --desc-color: #757575;
 }
 
-html {
-    box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -25,6 +21,10 @@ html {
 *:focus {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+    box-sizing: border-box;
 }
 
 body {
@@ -117,8 +117,8 @@ a {
     justify-content: space-between;
 }
 
-main {
-    border-top: 1px solid #ececec;
+header {
+    border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -175,7 +175,7 @@ main {
     color: var(--accent-color);
 }
 
-.navigation-list-link:hover::after {
+.active-page::after {
     content: '';
     display: block;
     width: 100%;
